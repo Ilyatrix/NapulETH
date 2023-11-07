@@ -33,6 +33,10 @@ img {
     width: 30%;
 }
 
+p{
+	margin: 10px;
+}
+
 .footerDiv{
 	margin: auto;
 	display: inline-flex;
@@ -81,6 +85,22 @@ img {
 @media (max-width:400px){ .ascii{font-size: 4px;}}
 @media (max-width:300px){ .ascii{font-size: 3px;}}
 @media (min-width:800px){ .ascii{font-size: 9px;}}
+
+.applies{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.apply{
+	border: 2px;
+	border-color: #0affff;
+	border-style: solid;	
+	margin: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
 .flag{
     width:15px;
