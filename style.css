@@ -19,6 +19,12 @@ code, .code {
     font-size: 85%;
     color:#a7d9ff;
 }
+footer {
+	display: flex;
+	background: #0010ff;
+	justify-content: space-between;
+	align-items: center;
+}
 
 img {
     display: block;
@@ -27,14 +33,33 @@ img {
     width: 30%;
 }
 
+.footerDiv{
+	margin: auto;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.navLinks {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.navAdress {
+	text-decoration: none;
+	padding: 5px 20px;
+}
+
 .icon, .navBar { background-color:#000000!important; }
 
 .icon { 
-    height: 32px;
-    padding: 8px 16px;
-    vertical-align:middle;
-    display:block; 
-    float: right;
+	height: 10px;
+	padding: 10px 8px;
+	vertical-align: middle;
+	display: block;
+	float: right;
 }
 
 .icon:hover {
@@ -42,12 +67,13 @@ img {
 }
 
 .navBar { 
-    height: 48px;
-    display:none; 
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
-#toggleNavBar { display: none;}
-#toggleNavBar:checked ~ .navBar { display: block;}
+/* #toggleNavBar { display: none;} */
+/* #toggleNavBar:checked ~ .navBar { display: block;} */
 @media (max-width:800px){ .ascii{font-size: 8px;}}
 @media (max-width:700px){ .ascii{font-size: 7px;}}
 @media (max-width:600px){ .ascii{font-size: 6px;}}
@@ -57,8 +83,8 @@ img {
 @media (min-width:800px){ .ascii{font-size: 9px;}}
 
 .flag{
-    width:45px;
-    height:30px;
+    width:15px;
+    height:10px;
     overflow:hidden;
     border:1px solid #efefef
 }
