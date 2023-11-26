@@ -179,32 +179,34 @@ a {
 }
 
 .divider {
-    border-top: 1px solid #eddb55;
+    border-top: 2px solid #eddb55;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adatta il 150px in base alla larghezza desiderata */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Definisce la larghezza delle celle e altri parametri */
     gap: 20px; /* Spazio tra gli elementi della griglia */
     justify-content: center;
     padding: 20px; /* Spazio intorno all'intera griglia */
 }
 
 .grid-item {
-    border: 1px solid #eddb55; /* Adatta il colore e la larghezza del bordo */
+    border: 2px solid #eddb55;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 5px; /* Spazio intorno all'immagine all'interno del bordo */
-	border-radius: 10px;
+	height: 150px;	/* Altezza del bordo */
+	border-radius: 10px;	/* Angoli arrotondati del bordo */
+	background-color: #6fcaf3;
 }
 
 .grid-item img {
     max-width: 100%;
-    max-height: 100px; /* Adatta in base all'altezza desiderata */
-    object-fit: contain; /* Mantiene le proporzioni dell'immagine */
+    max-height: 100%;
+    object-fit: contain;
 }
 
 .flag{
